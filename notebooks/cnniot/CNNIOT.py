@@ -1,9 +1,11 @@
 from pynq import Xlnk
 from pynq import Overlay
-import numpy as np
 import pynq.lib.dma
+import os
+import numpy as np
 
-overlay = Overlay('Bitstream.bit')   # load bitstream inside FPGA
+REAL_PATH = os.path.dirname(os.path.realpath(__file__))
+overlay = Overlay(os.path.join(REAL_PATH,'Bitstream.bit'))   # load bitstream inside FPGA
 dma = overlay.CNNIOT.CNN_dma         # define module DMA
 
 xlnk = Xlnk()
