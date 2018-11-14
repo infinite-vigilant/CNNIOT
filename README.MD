@@ -1,3 +1,13 @@
+# XUPSH branch
+## How To Use
+
+```console
+xilinx@pynq:~/jupyter_notebooks$ git clone https://github.com/xupsh/CNNIOT.git
+```
+Then you can try `UserGuide_Xupsh.ipynb` in jupyter notebook.
+
+-----------------
+
 # CNNIOT
 
 CNNIOT is a lightweight deep learning framework in python, to run convolution neural networks inside IOT devices. The idea underlying its design is to provide an easy-to-understand, fast and energy efficient platform and codebase. The framework supports major functions of CNN, such as convolution, pooling (max and average) and fully connected layer. The framework is implemented to support embedded platforms such as the Xilinx PYNQ FPGA which makes it fast and energy efficient. We envision that a variety of applications in computer vision, natural language processing, robotics can be implemented using this framework.
